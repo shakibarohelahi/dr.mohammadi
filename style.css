@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #262a29;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #414644;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span:hover {
+  color: #f1c562;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #adadad;
+  min-width: 160px;
+  box-shadow: 0px 8px 20px 0px rgba(100, 100, 100, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown img {
+  width: 12px;
+  height: 12px;
+}
+.maincontent {
+  width: 1200px;
+  height: 450px;
+  border: #f1c562 2px solid;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+}
+.maincontent li {
+  color: white;
+  list-style: ;
+}
+
+
+
+.drintro {
+  background-color: #f1c562;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+}
+.txt {
+  color: #f1c562;
+  font-size: large;
+  font-size: 20px;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
