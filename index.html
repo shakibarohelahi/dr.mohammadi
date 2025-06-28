@@ -26,8 +26,8 @@
       }
     </style>
   </head>
-  <body class="bg-[#262a29] m-0 p-0 w-full min-h-screen">
-    <div class="flex flex-col items-center">
+  <body class="bg-[#262a29] flex w-full min-h-screen  ">
+    <div class="flex flex-col items-center w-full items-center justify-center">
       <header
         class="w-full h-[150px] bg-[#414644] text-white text-[25px] flex items-center gap-[60px] pr-60"
       >
@@ -205,27 +205,29 @@
       </div>
 
       <div
-        class="flex w-full min-h-screen items-center justify-center gap-10 px-10 mt-40"
+        class="flex w-full min-h-screen items-center justify-center gap-40 "
       >
         <!-- ستون راست: عکس -->
-        <div class="w-1/2 flex justify-center items-center">
+        <div class="flex justify-center items-center  ">
           <img
             src="assets/tooth-1.webp"
             alt="Tooth Image"
-            class="max-w-full h-auto"
+            class="w-[600px] h-[600px]"
           />
         </div>
 
         <!-- ستون چپ: ۴ باکس در ۲ ردیف -->
-        <div class="w-1/2 grid grid-cols-2 gap-6">
+        <div class="w-1/2 grid grid-cols-2 ">
           <!-- باکس 1 -->
-          <div class="bg-[#313736] h-[300px] p-5 flex flex-col">
+          <div class="bg-[#313736] h-[300px] p-5 flex flex-col border-solid border-2 border-[#F1C562] mx-3 my-2">
+            <span class="flex row gap-5">
             <img
               class="w-[80px]"
               src="assets/rokeshimplant.svg"
               alt="روکش ایمپلنت"
             />
             <h1 class="text-white font-bold text-[30px] mt-2">روکش ایمپلنت</h1>
+            </span>
             <p class="text-[#9e9e9e] mt-2 text-[20px]">
               روکشی که از ایمپلنت پشتیبانی می‌کند شبیه یک روکش دندان معمولی است،
               اما به جای دندان ….
@@ -233,13 +235,15 @@
           </div>
 
           <!-- باکس 2 -->
-          <div class="bg-[#313736] h-[300px] p-5 flex flex-col">
+          <div class="bg-[#313736] h-[300px] p-5 flex flex-col border-solid border-2 border-[#F1C562] mx-3 my-2 ">
+            <span class="flex row gap-5">
             <img
               class="w-[80px]"
               src="assets/rokeshdandon.svg"
               alt="روکش دندان"
             />
             <h1 class="text-white font-bold text-[30px] mt-2">روکش دندان</h1>
+            </span>
             <p class="text-[#9e9e9e] mt-2 text-[20px]">
               روکش‌های دندانی از دیرباز راه حلی برای بازیابی ظاهر و عملکرد دندان
               آسیب‌دیده بوده است.
@@ -247,9 +251,11 @@
           </div>
 
           <!-- باکس 3 -->
-          <div class="bg-[#313736] h-[300px] p-5 flex flex-col">
+          <div class="bg-[#313736] h-[300px] p-5 flex flex-col border-solid border-2 border-[#F1C562] mx-3 my-2">
+            <span class="flex row gap-5">
             <img class="w-[80px]" src="assets/bleaching.svg" alt="بلیچینگ" />
             <h1 class="text-white font-bold text-[30px] mt-2">بلیچینگ</h1>
+            </span>
             <p class="text-[#9e9e9e] mt-2 text-[20px]">
               بلیچینگ روشی ایمن، سریع و بسیار مؤثر برای سفید کردن دندان‌های شما
               است.
@@ -257,9 +263,11 @@
           </div>
 
           <!-- باکس 4 -->
-          <div class="bg-[#313736] h-[300px] p-5 flex flex-col">
+          <div class="bg-[#313736] h-[300px] p-5 flex flex-col border-solid border-2 border-[#F1C562] mx-3 my-1">
+               <span class="flex row gap-5">
             <img class="w-[80px]" src="assets/liftlase.svg" alt="لیفت لثه" />
             <h1 class="text-white font-bold text-[30px] mt-2">لیفت لثه</h1>
+            </span>
             <p class="text-[#9e9e9e] mt-2 text-[20px]">
               لیفت لثه‌ زیبایی اغلب روی لثه‌های اطراف دندان‌های جلویی یا
               دندان‌های بالایی اعمال می‌شود.
@@ -268,13 +276,13 @@
         </div>
       </div>
       <!--اسکرول صفحه سوم-->
-      <div class="flex flex-row justify-start gap-6 px-10 mt-20" dir="rtl">
+      <div class="flex flex-row justify-start gap-6 mt-20" >
         <!-- ستون ۱ -->
-        <div class="flex flex-col items-center gap-2">
+        <div class="flex flex-col items-center gap-2 ">
           <img
-            src="assets/beforeafter1.webp"
+            src="assets/beforafter3.webp"
             alt="قبل و بعد 1"
-            class="rounded-md border-2 border-yellow-400 w-[500px]"
+            class=" border-2 border-yellow-400 w-[600px] p-6 "
           />
         </div>
 
@@ -283,21 +291,21 @@
           <img
             src="assets/beforafter2.webp"
             alt="قبل و بعد 2"
-            class="rounded-md border-2 border-yellow-400 w-[500px]"
+            class="border-2 border-yellow-400 w-[600px] p-6 "
           />
         </div>
 
         <!-- ستون ۳ -->
         <div class="flex flex-col items-center gap-2">
           <img
-            src="assets/beforafter3.webp"
+            src="assets/beforeafter1.webp"
             alt="قبل و بعد 3"
-            class="rounded-md border-2 border-yellow-400 w-[500px]"
+            class=" border-2 border-yellow-400 w-[600px] p-6 "
           />
         </div>
 
         <!-- ستون آخر: متن + عکس طلایی -->
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center justify-center gap-4">
           <h1 class="text-[#f1c562] text-[30px] font-bold">لبخند طلایی شما</h1>
           <img
             src="assets/goldentooth.webp"
@@ -476,7 +484,7 @@
 </div>
 
       </div>
-    </div>
+   
     <script src="main.js"></script>
   </body>
 </html>
