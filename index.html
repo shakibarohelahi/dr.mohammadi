@@ -322,132 +322,105 @@
           />
         </div>
       </div>
-      <div class="flex flex-row-reverse justify-center p-20 items-center mt-20">
-        <div class="w-1/2 grid grid-cols-2 gap-6 mt-40">
-          <!-- باکس 1 -->
-          <div class="bg-[#313736] h-[300px] p-12 flex flex-col">
-            <span class="flex row gap-5">
-              <img
-                class="w-[70px]"
-                src="assets/Protez.svg"
-                alt="روکش ایمپلنت"
-              />
-              <h1 class="text-white font-bold text-[30px] mt-2">پروتز متحرک</h1>
-            </span>
-            <p class="text-[#FFFFFFC4] mt-5 text-[24px]">
-              استفاده از پروتزهای متحرک دندان امکان ترمیم قوس دندانی را در صورت
-              بی‌دندانی کامل یا جزئی …
-            </p>
-          </div>
 
-          <!-- باکس 2 -->
-          <div class="bg-[#313736] h-[300px] p-12 flex flex-col">
-            <span class="flex row gap-5">
-              <img
-                class="w-[70px]"
-                src="assets/rokeshdandon.svg"
-                alt="روکش دندان"
-              />
-              <h1 class="text-white font-bold text-[30px] mt-2">پروتز ثابت</h1>
-            </span>
-            <p class="text-[#FFFFFFC4] mt-5 text-[24px]">
-              پروتز ثابت دندان یک وسیله مصنوعی سفارشی با یک یا چند دندان است که
-              برای جایگزینی دندان‌های …
-            </p>
-          </div>
-
-          <!-- باکس 3 -->
-          <div class="bg-[#313736] h-[300px] p-12 flex flex-col">
-            <span class="flex row gap-5">
-              <img class="w-[80px]" src="assets/bleaching.svg" alt="بلیچینگ" />
-              <h1 class="text-white font-bold text-[30px] mt-2">اوردنچر</h1>
-            </span>
-            <p class="text-[#FFFFFFC4] mt-5 text-[24px]">
-              اوردنچر روشی جدیدتر برای جایگزینی دندان برای بیمارانی است که تمام
-              دندان‌های خود را از …
-            </p>
-          </div>
-
-          <!-- باکس 4 -->
-          <div class="bg-[#313736] h-[300px] p-12 flex flex-col">
-            <span class="flex row gap-5">
-              <img class="w-[80px]" src="assets/liftlase.svg" alt="لیفت لثه" />
-              <h1 class="text-white font-bold text-[30px] mt-2">طراحی لبخند</h1>
-            </span>
-            <p class="text-[#FFFFFFC4] mt-5 text-[24px]">
-              در روش طراحی لبخند سه بعدی، دندانپزشک با استفاده از عکاسی
-              استودیویی با وضوح بالا و …
-            </p>
-          </div>
-        </div>
-
-        <!-- ستون راست (الان: عکس + باکس متن با اسپن‌ها) -->
-        <div class="flex flex-col items-center w-1/2">
+      <!--اسکرول صفحه بعد-->
+      <div class="flex justify-center items-start gap-10 px-10 py-20">
+        <div class="w-1/2 flex flex-col items-center">
           <!-- عکس بالا -->
           <img
             src="assets/smile-mouth-.webp"
             alt="لبخند"
-            class="w-full max-w-[400px]"
+            class="w-full max-w-sm -mb-6"
           />
 
-          <!-- باکس متنی با اسپن‌ها -->
+          <!-- کاروسل متن -->
           <div
-            class="bg-[#313736] p-6 w-[700px] h-[600px] flex justify-center items-center mb-40"
+            class="bg-[#313736] w-full max-w-xl h-[500px] flex justify-center items-center relative overflow-hidden rounded-lg"
           >
-            <span
-              class="border-2 border-yellow-400 p-6 w-[650px] h-[550px] flex justify-center items-center"
+            <div
+              id="slider-container"
+              class="w-full h-full cursor-grab active:cursor-grabbing overflow-hidden select-none flex justify-end items-center transition-all duration-500 px-6 text-center text-white text-[20px] leading-relaxed"
             >
-              <div class="mySlides fade">
-                <p class="text-[#FFFFFFC4] mt-5 text-[25px] text-center">
-                  من در 51 سالگی تمامی دندان های فک بالا رو از دست داده بودم. با
-                  دکتر محمد محمدی آشنا شدم و روکش مبتنی بر ایمپلنت را پیش ایشون
-                  انجام دادم. علاوه بر اینکه ظاهر دندون هام خیلی خوب شده، راحت
-                  غذا میخورم و روکشم جابجا نمیشه. از همه مهم تر دچار عفونت هم
-                  نشدم.
-                </p>
-                <h1 class="text-[#f1c562] text-[32px] font-bold text-center">
-                  علی رضا مددی
-                </h1>
-              </div>
-              <div class="mySlides fade">
-                <p class="text-[#FFFFFFC4] mt-5 text-[25px] text-center">
-                  من 65 سالم هست. مجبور بودم دندان های هر دو فکم رو بکشم و کاملا
-                  بی دندان بودم. دکتر محمد محمدی درمان بی دندانی کامل دو فکم رو
-                  با روکش های تمام سرامیکی زیرکونیا مبتنی بر ایمپلنت انجام
-                  دادند. که اباتمنت هارو با کامپیوتر طراحی کردند. از بابت هزینه
-                  هایی که انجام دادم پشیمون نیستم.
-                </p>
-                <h1 class="text-[#f1c562] text-[32px] font-bold text-center">
-                  احمد اخلاقی
-                </h1>
-              </div>
-              <div class="mySlides fade">
-                <p class="text-[#FFFFFFC4] mt-5 text-[25px] text-center">
-                  من با اینکه جوان هستم ولی دچار بیماری لثه شدم و تمام دندانهامو
-                  از دست دادم. این وضعیت تو روحیه ام خیلی تاثیر بدی گذاشت. تا
-                  اینکه دکتر محمد محمدی رو بهم معرفی کردند. دکتر محمدی روکش تمام
-                  سرامیکی زیرکونیا مبتنی بر ایمپلنت رو برام انجام دادند. و الان
-                  واقعا خوشحالم.
-                </p>
-                <h1 class="text-[#f1c562] text-[32px] font-bold text-center">
-                  مرجان محمدی
-                </h1>
-              </div>
-              <div class="mySlides fade">
-                <p class="text-[#FFFFFFC4] mt-5 text-[25px] text-center">
-                  من با اینکه جوان هستم ولی دچار بیماری لثه شدم و تمام دندانهامو
-                  از دست دادم. این وضعیت تو روحیه ام خیلی تاثیر بدی گذاشت. تا
-                  اینکه دکتر محمد محمدی رو بهم معرفی کردند. دکتر محمدی روکش تمام
-                  سرامیکی زیرکونیا مبتنی بر ایمپلنت رو برام انجام دادند. و الان
-                  واقعا خوشحالم.
-                </p>
-                <h1 class="text-[#f1c562] text-[32px] font-bold text-center">
-                  مرجان محمدی
-                </h1>
-              </div>
-            </span>
+              <div class="slider-inner flex transform 0.3s ease-out;"></div>
+            </div>
           </div>
         </div>
+        <!-- سمت راست (الان درست): باکس‌ها + عنوان -->
+        <div class="w-1/2 flex flex-col">
+          <!-- عنوان -->
+          <div class="text-[#f1c562] text-[30px] font-bold mb-8 text-right">
+            همیشه راهی برای داشتن لبخندی زیبا وجود دارد
+          </div>
+
+          <!-- باکس‌ها -->
+          <div class="grid grid-cols-2 gap-6">
+            <!-- باکس 1 -->
+            <div class="bg-[#313736] h-[300px] p-6 flex flex-col rounded-lg">
+              <div class="flex items-center gap-4">
+                <img
+                  class="w-[60px]"
+                  src="assets/Protez.svg"
+                  alt="پروتز متحرک"
+                />
+                <h1 class="text-white font-bold text-[22px]">پروتز متحرک</h1>
+              </div>
+              <p class="text-[#FFFFFFC4] mt-4 text-[16px] leading-relaxed">
+                استفاده از پروتزهای متحرک دندان امکان ترمیم قوس دندانی را در
+                صورت بی‌دندانی کامل یا جزئی فراهم می‌کند.
+              </p>
+            </div>
+
+            <!-- باکس 2 -->
+            <div class="bg-[#313736] h-[300px] p-6 flex flex-col rounded-lg">
+              <div class="flex items-center gap-4">
+                <img
+                  class="w-[60px]"
+                  src="assets/rokeshdandon.svg"
+                  alt="پروتز ثابت"
+                />
+                <h1 class="text-white font-bold text-[22px]">پروتز ثابت</h1>
+              </div>
+              <p class="text-[#FFFFFFC4] mt-4 text-[16px] leading-relaxed">
+                پروتز ثابت دندان یک وسیله مصنوعی سفارشی است که برای جایگزینی
+                دندان‌های از دست رفته استفاده می‌شود.
+              </p>
+            </div>
+
+            <!-- باکس 3 -->
+            <div class="bg-[#313736] h-[300px] p-6 flex flex-col rounded-lg">
+              <div class="flex items-center gap-4">
+                <img
+                  class="w-[60px]"
+                  src="assets/bleaching.svg"
+                  alt="اوردنچر"
+                />
+                <h1 class="text-white font-bold text-[22px]">اوردنچر</h1>
+              </div>
+              <p class="text-[#FFFFFFC4] mt-4 text-[16px] leading-relaxed">
+                اوردنچر گزینه‌ای پیشرفته برای بیماران بدون دندان است که راحتی و
+                ثبات بیشتری نسبت به پروتزهای سنتی دارد.
+              </p>
+            </div>
+
+            <!-- باکس 4 -->
+            <div class="bg-[#313736] h-[300px] p-6 flex flex-col rounded-lg">
+              <div class="flex items-center gap-4">
+                <img
+                  class="w-[60px]"
+                  src="assets/liftlase.svg"
+                  alt="طراحی لبخند"
+                />
+                <h1 class="text-white font-bold text-[22px]">طراحی لبخند</h1>
+              </div>
+              <p class="text-[#FFFFFFC4] mt-4 text-[16px] leading-relaxed">
+                طراحی لبخند سه‌بعدی با تکنولوژی پیشرفته و تصویربرداری دقیق،
+                ظاهری متعادل و زیبا به لبخند شما می‌بخشد.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- سمت چپ (الان کراسل): عکس + اسلایدر -->
       </div>
 
       <!--اسکرول صفحه پنجم-->
@@ -480,7 +453,7 @@
               <span>
                 <img src="assets/toot-box1.webp " class="w-[150px] h-[150px]"
               /></span>
-              <span class="flex flex-col ">
+              <span class="flex flex-col">
                 <h2 class="text-[#f1c562] text-[30px] font-bold">
                   بهترین دکتر ایمپلنت دیجیتال در تهران
                 </h2>
@@ -494,7 +467,7 @@
               <span>
                 <img src="assets/tooth-box2.webp" class="w-[150px] h-[150px]" />
               </span>
-              <span class="flex flex-col ">
+              <span class="flex flex-col">
                 <h2 class="text-[#f1c562] text-[30px] font-bold">
                   بهترین رنگ روکش دندان
                 </h2>
@@ -508,24 +481,26 @@
               <span>
                 <img src="assets/tooth-box3.webp" class="w-[150px] h-[150px]" />
               </span>
-               <span class="flex flex-col ">
-              <h2 class="text-[#f1c562] text-[30px]  font-bold">اوردنچر</h2>
-              <p class="text-white text-[30px]">
-                روش مدرن‌تر جایگزینی دندان برای بی‌دندانی کامل با پشتیبانی
-                ایمپلنت.
-              </p>
+              <span class="flex flex-col">
+                <h2 class="text-[#f1c562] text-[30px] font-bold">اوردنچر</h2>
+                <p class="text-white text-[30px]">
+                  روش مدرن‌تر جایگزینی دندان برای بی‌دندانی کامل با پشتیبانی
+                  ایمپلنت.
+                </p>
               </span>
             </span>
             <span class="bg-[#313736] h-[200px] p-5 flex gap-3">
               <span>
                 <img src="assets/tooth-box4.webp" class="w-[150px] h-[150px]" />
               </span>
-               <span class="flex flex-col ">
-              <h2 class="text-[#f1c562] text-[30px]  font-bold">طراحی لبخند</h2>
-              <p class="text-white text-[30px]">
-                طراحی لبخند سه‌بعدی با عکاسی حرفه‌ای و تحلیل فرم چهره و
-                دندان‌ها.
-              </p>
+              <span class="flex flex-col">
+                <h2 class="text-[#f1c562] text-[30px] font-bold">
+                  طراحی لبخند
+                </h2>
+                <p class="text-white text-[30px]">
+                  طراحی لبخند سه‌بعدی با عکاسی حرفه‌ای و تحلیل فرم چهره و
+                  دندان‌ها.
+                </p>
               </span>
             </span>
           </div>
@@ -545,7 +520,7 @@
             دکتر محمد محمدی دندانپزشک و متخصص پروتزهای دندانی و<br />
             ایمپلنت، رتبه اول بورد تخصصی کشور
           </h1>
-          <img src="assets/download.webp" class="w-[300px] h-auto">
+          <img src="assets/download.webp" class="w-[300px] h-auto" />
         </div>
         <div class="flex flex-col gap-10">
           <h1 class="text-[#f1c562] text-[30px] font-bold">راه های ارتباط</h1>
@@ -583,18 +558,23 @@
           <h1 class="text-[#FFFFFFCC] text-[20px]">نمونه کارها</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">مطب چی</h1>
         </div>
-        <div class="flex flex-col gap-10 ">
+        <div class="flex flex-col gap-10">
           <h1 class="text-[#f1c562] text-[30px] font-bold">آخرین مقالات</h1>
           <h1 class="text-[#FFFFFFCC] text-[25px]">
             بهترین دکتر ایمپلنت دیجیتال در تهران
           </h1>
           <h1 class="text-[#FFFFFFCC] text-[25px]">بهترین رنگ روکش دندان</h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">مرتب کردن دندان ها با 5 روش</h1>
-          <h1 class="text-[#FFFFFFCC]  text-[25px]">
+          <h1 class="text-[#FFFFFFCC] text-[25px]">
+            مرتب کردن دندان ها با 5 روش
+          </h1>
+          <h1 class="text-[#FFFFFFCC] text-[25px]">
             لق شدن ایمپلنت دندان + علل، علائم و درمان
           </h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">زود جوش خوردن ایمپلنت دندان</h1>
-        </div>D
+          <h1 class="text-[#FFFFFFCC] text-[25px]">
+            زود جوش خوردن ایمپلنت دندان
+          </h1>
+        </div>
+        D
       </div>
     </div>
 
