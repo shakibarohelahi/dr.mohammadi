@@ -44,7 +44,7 @@ container.appendChild(slidesWrapper);
 // ساخت اسلایدها
 slides.forEach((item) => {
   const slide = document.createElement("div");
-  slide.className = "w-[550px] p-6";
+  slide.className = "w-[600px] p-8";
   slide.innerHTML = `
     <p class="text-[#FFFFFFC4] text-base sm:text-lg leading-relaxed">${item.text}</p>
     <h1 class="text-[#f1c562] text-xl font-bold mt-6">${item.name}</h1>
@@ -53,7 +53,7 @@ slides.forEach((item) => {
 });
 
 let currentIndex = 0;
-const slideWidth = 550;
+const slideWidth = 600;
 
 function updateSlide() {
   slidesWrapper.style.transition = "transform 0.5s ease";

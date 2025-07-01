@@ -26,10 +26,12 @@
       }
     </style>
   </head>
-  <body class="bg-[#262a29] flex w-full min-h-screen">
-    <div class="flex flex-col items-center w-full items-center justify-center">
+  <body
+    class="bg-[#262a29] flex w-full min-h-screen justify-center items-center"
+  >
+    <div class="flex flex-col w-full items-center justify-center">
       <header
-        class="w-full h-[150px] bg-[#414644] text-white text-[25px] flex items-center gap-[60px] pr-60"
+        class="w-full h-[150px] bg-[#414644] text-white text-[25px] flex items-center gap-[60px] pr-40"
       >
         <div class="w-40 h-40">
           <img src="assets/logo.webp" class="w-full h-full object-contain" />
@@ -156,25 +158,25 @@
       </header>
 
       <div
-        class="w-[2100px] h-[900px] border-2 border-[#f1c562] mt-40 gap-40 flex flex-row-reverse justify-around"
+        class="w-[1700px] h-[700px] border-2 border-[#f1c562] mt-40 gap-40 flex flex-row-reverse justify-around"
       >
         <div>
           <div class="mySlides fade">
             <img
               src="assets/drmmohammadi-slider.webp"
-              class="w-[800px] h-[900px]"
+              class="w-[600px] h-[700px]"
             />
           </div>
           <div class="mySlides fade">
             <img
               src="assets/drmmohammadi-slider2.webp"
-              class="w-[800px] h-[900px]"
+              class="w-[600px] h-[700px]"
             />
           </div>
           <div class="mySlides fade">
             <img
               src="assets/drmmohammadi-slider3.webp"
-              class="w-[800px] h-[900px]"
+              class="w-[600px] h-[700px]"
             />
           </div>
         </div>
@@ -324,7 +326,7 @@
       </div>
 
       <!--اسکرول صفحه بعد-->
-      <div class="flex justify-center items-start gap-10 px-10 py-20">
+      <div class="flex justify-center items-center gap-10 px-10 py-20">
         <div class="w-1/2 flex flex-col items-center">
           <!-- عکس بالا -->
           <img
@@ -335,18 +337,18 @@
 
           <!-- کاروسل متن -->
           <div
-            class="bg-[#313736] w-full max-w-xl h-[500px] flex justify-center items-center relative overflow-hidden rounded-lg"
+            class="bg-[#313736] w-full max-w-[600px] h-[500px] flex justify-center items-center relative overflow-hidden"
           >
-            <div
-              id="slider-container"
-              class="w-full h-full cursor-grab active:cursor-grabbing overflow-hidden select-none flex justify-end items-center transition-all duration-500 px-6 text-center text-white text-[20px] leading-relaxed"
-            >
-              <div class="slider-inner flex transform 0.3s ease-out;"></div>
+            <div class="w-[570px] h-[450px] border-2 border-yellow-400">
+              <div
+                id="slider-container"
+                class="h-full cursor-grab active:cursor-grabbing overflow-hidden select-none flex justify-end items-center transition-all duration-500 text-center text-white text-[20px] leading-relaxed"
+              ></div>
             </div>
           </div>
         </div>
         <!-- سمت راست (الان درست): باکس‌ها + عنوان -->
-        <div class="w-1/2 flex flex-col">
+        <div class="w-1/2 flex flex-col mt-20">
           <!-- عنوان -->
           <div class="text-[#f1c562] text-[30px] font-bold mb-8 text-right">
             همیشه راهی برای داشتن لبخندی زیبا وجود دارد
@@ -419,87 +421,85 @@
             </div>
           </div>
         </div>
-
-        <!-- سمت چپ (الان کراسل): عکس + اسلایدر -->
       </div>
 
       <!--اسکرول صفحه پنجم-->
-      <div class="flex flex-row items-center justify-center gap-6 mt-60 mb-20">
+      <div class="flex items-center justify-center gap-6 mt-60 mb-20">
         <!-- ستون راست: عکس -->
-        <div class="w-[500px] flex justify-start">
+        <div class="w-[400px] flex justify-start">
           <img
             src="assets/tooth5.webp"
             alt="تصویر مقاله"
-            class="w-full max-w-[300px]"
+            class="w-full max-w-[400px]"
           />
         </div>
 
         <!-- ستون چپ: عنوان، خط، دکمه‌ها -->
-        <div class="w-full flex-row-reverse flex-col gap-6">
+        <div class="w-full flex-col gap-6">
           <!-- عنوان و خط با آرشیو -->
           <div class="flex items-center gap-6">
-            <span class="text-[#f1c562] text-[32px] font-bold whitespace-nowrap"
+            <span class="text-[#f1c562] text-[32px] font-bold"
               >آخرین مقالات</span
             >
-            <hr class="flex-grow border-t border-white w-[1200px]" />
-            <span class="text-white text-[30px] whitespace-nowrap"
-              >آرشیو مقالات</span
-            >
+            <hr class="border-t border-white w-[1500px]" />
+            <span class="text-[#D9D9D9] text-[30px]">آرشیو مقالات</span>
           </div>
 
           <!-- دکمه‌ها در ۲ ستون -->
           <div class="grid grid-cols-2 gap-10 mt-10">
-            <span class="bg-[#313736] h-[200px] p-5 flex gap-3">
+            <span class="bg-[#313736] w-[900px] h-[250px] p-5 flex gap-3">
               <span>
-                <img src="assets/toot-box1.webp " class="w-[150px] h-[150px]"
+                <img src="assets/toot-box1.webp " class="w-[200px] h-[200px]"
               /></span>
               <span class="flex flex-col">
                 <h2 class="text-[#f1c562] text-[30px] font-bold">
                   بهترین دکتر ایمپلنت دیجیتال در تهران
                 </h2>
-                <p class="text-white text-[30px]">
+                <p class="text-[#D9D9D9] text-[22px] mt-4">
                   انتخاب بهترین دکتر ایمپلنت دیجیتال در تهران بسیار سخت است و
                   وابسته به نیازها و ترجیحات شخصی
                 </p>
               </span>
             </span>
-            <span class="bg-[#313736] h-[200px] p-5 flex gap-3">
+            <span class="bg-[#313736] w-[900px] h-[250px] p-5 flex gap-3">
               <span>
-                <img src="assets/tooth-box2.webp" class="w-[150px] h-[150px]" />
+                <img src="assets/tooth-box2.webp" class="w-[200px] h-[200px]" />
               </span>
               <span class="flex flex-col">
                 <h2 class="text-[#f1c562] text-[30px] font-bold">
                   بهترین رنگ روکش دندان
                 </h2>
-                <p class="text-white text-[30px]">
+                <p class="text-[#D9D9D9] text-[22px] mt-4">
                   رنگ روکش دندان شامل رنگ A که مایل به قهوه‌ای است، رنگ B که
                   مایل به زرد
                 </p>
               </span>
             </span>
-            <span class="bg-[#313736] h-[200px] p-5 flex gap-3">
+            <span class="bg-[#313736] w-[900px] h-[250px] p-5 flex gap-3">
               <span>
-                <img src="assets/tooth-box3.webp" class="w-[150px] h-[150px]" />
-              </span>
-              <span class="flex flex-col">
-                <h2 class="text-[#f1c562] text-[30px] font-bold">اوردنچر</h2>
-                <p class="text-white text-[30px]">
-                  روش مدرن‌تر جایگزینی دندان برای بی‌دندانی کامل با پشتیبانی
-                  ایمپلنت.
-                </p>
-              </span>
-            </span>
-            <span class="bg-[#313736] h-[200px] p-5 flex gap-3">
-              <span>
-                <img src="assets/tooth-box4.webp" class="w-[150px] h-[150px]" />
+                <img src="assets/tooth-box3.webp" class="w-[200px] h-[200px]" />
               </span>
               <span class="flex flex-col">
                 <h2 class="text-[#f1c562] text-[30px] font-bold">
-                  طراحی لبخند
+                  مرتب کردن دندان ها با 5 روش
                 </h2>
-                <p class="text-white text-[30px]">
-                  طراحی لبخند سه‌بعدی با عکاسی حرفه‌ای و تحلیل فرم چهره و
-                  دندان‌ها.
+                <p class="text-[#D9D9D9] text-[22px] mt-4">
+                  مرتب کردن دندان یکی از دغدغه‌های بسیاری از افراد است. دندان‌ها
+                  در زیبایی چهره افراد تاثیر بسیاری
+                </p>
+              </span>
+            </span>
+            <span class="bg-[#313736] w-[900px] h-[250px] p-5 flex gap-3">
+              <span>
+                <img src="assets/tooth-box4.webp" class="w-[200px] h-[200px]" />
+              </span>
+              <span class="flex flex-col">
+                <h2 class="text-[#f1c562] text-[30px] font-bold">
+                  لق شدن ایمپلنت دندان + علل، علائم و درمان
+                </h2>
+                <p class="text-[#D9D9D9] text-[22px] mt-4">
+                  لق شدن ایمپلنت دندان به وضعیتی گفته می‌شود که ایمپلنت به بافت
+                  لثه یا استخوان فک جوش
                 </p>
               </span>
             </span>
@@ -508,74 +508,90 @@
       </div>
 
       <!---فوتر-->
-      <div
-        class="w-full h-[1000px] bg-black border-t-2 border-yellow-400 gap-40 p-10 flex justify-center items-center"
+      <footer
+        class="w-full h-[700px] bg-black border-t-2 border-yellow-400 gap-40 flex justify-start p-20 whitespace-nowrap"
       >
-        <div class="flex flex-col gap-10">
-          <span class="flex row gap-4">
+        <section class="flex flex-col gap-10">
+          <span class="flex gap-4">
             <img class="w-20 h-20" src="assets/sv.svg" />
-            <h1 class="text-[#f1c562] text-[30px]">دکتر محمد محمدی</h1></span
+            <h1 class="text-[#f1c562] text-[20px]">دکتر محمد محمدی</h1></span
           >
-          <h1 class="text-[#FFFFFFCC] text-[20px]">
+          <h1 class="text-[#D9D9D9] text-[20px]">
             دکتر محمد محمدی دندانپزشک و متخصص پروتزهای دندانی و<br />
             ایمپلنت، رتبه اول بورد تخصصی کشور
           </h1>
+          <span class="flex gap-4">
+            <a
+              href="https://instagram.com/dr.mohamadmohamadi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/instagram_icon_black_bg.svg" class="w-10 h-10" />
+            </a>
+            <a
+              href="https://www.aparat.com/dr.MohamadMohamadi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/aparat.svg" class="w-10 h-10 bg-white hover:" />
+            </a>
+          </span>
           <img src="assets/download.webp" class="w-[300px] h-auto" />
-        </div>
-        <div class="flex flex-col gap-10">
+        </section>
+        <section class="flex flex-col gap-10">
           <h1 class="text-[#f1c562] text-[30px] font-bold">راه های ارتباط</h1>
-          <span class="felx flex-row gap-2">
-            <img src="assets/location.svg" />
-            <h1 class="text-[#FFFFFFCC] text-[30px] font-bold">آدرس مطب</h1>
+          <span class="flex gap-4">
+            <img src="assets/location.svg" class="w-8 h-8" />
+            <h1 class="text-[#FFFFFFCC] text-[20px] font-bold">آدرس مطب</h1>
           </span>
 
-          <h2 class="text-[#FFFFFFCC] text-[20px]">
+          <h2 class="text-[#FFFFFFCC] text-[20x]">
             تهران، خیابان دولت، خیابان نعمتی، ساختمان نگین <br />کیکاووس، پلاک1،
             طبقه4، واحد8
           </h2>
-          <span class="felx flex-row gap-2">
-            <img src="assets/phone.svg" />
+          <span class="flex gap-4">
+            <img src="assets/phone.svg" class="w-8 h-8" />
             <h1 class="text-[#FFFFFFCC] text-[30px] font-bold">تلفن مطب</h1>
           </span>
 
-          <h2 class="text-white text-[20px]">۰۲۱۲۶۶۰۶۴۸۳</h2>
-          <span class="felx flex-row gap-2">
-            <img src="assets/calander.svg" />
-            <h1 class="text-[#FFFFFFCC] text-[30px] font-bold">ساعت کاری</h1>
+          <h2 class="text-[#FFFFFFCC] text-[20px]">۰۲۱۲۶۶۰۶۴۸۳</h2>
+          <span class="flex gap-4">
+            <img src="assets/calander.svg" class="w-8 h-8" />
+            <h1 class="text-[#FFFFFFCC] text-[20px] font-bold">ساعت کاری</h1>
           </span>
 
           <h2 class="text-[#FFFFFFCC] text-[20px]">
             یکشنبه دوشنبه چهارشنبه | ۱۰ الی ۱۸
           </h2>
-        </div>
-        <div class="flex flex-col gap-10">
+        </section>
+        <section class="flex flex-col gap-6">
           <h1 class="text-[#f1c562] text-[30px] font-bold">لینک‌های مفید</h1>
-          <h1 class="text-[#FFFFFFCC] text-[20px]">دکتر محمد محمدی</h1>
+          <h1 class="text-[#f1c562] text-[20px]">دکتر محمد محمدی</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">نقشه سایت</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">بلاگ</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">تماس با دکتر</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">ویدیو ها</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">نمونه کارها</h1>
           <h1 class="text-[#FFFFFFCC] text-[20px]">مطب چی</h1>
-        </div>
-        <div class="flex flex-col gap-10">
+        </section>
+        <section class="flex flex-col gap-4">
           <h1 class="text-[#f1c562] text-[30px] font-bold">آخرین مقالات</h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">
+          <h1 class="text-[#FFFFFFCC] text-[18px]">
             بهترین دکتر ایمپلنت دیجیتال در تهران
           </h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">بهترین رنگ روکش دندان</h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">
+          <h1 class="text-[#FFFFFFCC] text-[18px]">بهترین رنگ روکش دندان</h1>
+          <h1 class="text-[#FFFFFFCC] text-[18px]">
             مرتب کردن دندان ها با 5 روش
           </h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">
+          <h1 class="text-[#FFFFFFCC] text-[18px]">
             لق شدن ایمپلنت دندان + علل، علائم و درمان
           </h1>
-          <h1 class="text-[#FFFFFFCC] text-[25px]">
+          <h1 class="text-[#FFFFFFCC] text-[18px]">
             زود جوش خوردن ایمپلنت دندان
           </h1>
-        </div>
+        </section>
         D
-      </div>
+      </footer>
     </div>
 
     <script src="main.js"></script>
